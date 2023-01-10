@@ -1,4 +1,5 @@
-import { getHackScript } from 'import.js';
+/** @param {NS} ns */
+import { getHackScript } from "import.js";
 
 /* Deploys the hack script to all purchased servers
  * Differs from autoRemoteHack because you can specify
@@ -8,7 +9,7 @@ import { getHackScript } from 'import.js';
  */
 export async function main(ns) {
   let myServers = ns.getPurchasedServers();
-  let targetServers = ns.args[0].split(',');
+  let targetServers = ns.args[0].split(",");
   let hackScript = ns.args[1] || getHackScript();
   let scriptRam = ns.getScriptRam(hackScript);
   for (const [index, server] of myServers.entries()) {

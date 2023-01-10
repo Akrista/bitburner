@@ -1,19 +1,25 @@
 # bitburner-scripts
 
-I'm playing [BitBurner]() on Thursdays at https://twitch.tv/ChaelCodes ! This is my Repo of BitBurner Scripts.
+This is a Fork of [BitBurner](https://store.steampowered.com/app/1812820/Bitburner/) Scripts from [ChaelCodes](https://github.com/ChaelCodes/bitburner-scripts).
 
 You can import these scripts by running the following in Bitburner.
 
 # Get the importer
-`wget https://raw.githubusercontent.com/ChaelCodes/bitburner-scripts/main/import.js import.js`
-# Configure your Import
-You can configure your import inside `import.js`.
+
+```console
+wget https://raw.githubusercontent.com/akrista/bitburner/main/scripts/import.js import.js
 ```
-    config = {
-        folder: 'scripts',
-        rootUrl: 'https://raw.githubusercontent.com/ChaelCodes/bitburner-scripts/main/',
-        serverPrefix: 'ChaelPwns',
-    };
+
+# Configure your Import
+
+You can configure your import inside `import.js`.
+
+```js
+config = {
+  folder: "scripts",
+  rootUrl: "https://raw.githubusercontent.com/akrista/bitburner/main/",
+  serverPrefix: "Monolith",
+};
 ```
 
 - `folder` will determine where your scripts are stored
@@ -21,9 +27,11 @@ You can configure your import inside `import.js`.
 - `serverPrefix` your automatically purchased servers will be filtered from auto hacks using this prefix. Pick a fun name!
 
 # Run your import!
+
 `run import.js` will tell you if everything worked. Please reach out and create an issue for troubleshooting. Please include your import.js, and make sure your forked repo is public!
 
 # Explore! Enjoy!
+
 Follow instructions, try help with various commands.
 Try running `run /scripts/hax.js autoHack` there's numerous commands available there. Explore!
 
