@@ -7,7 +7,7 @@ You can import these scripts by running the following in Bitburner.
 # Get the importer
 
 ```console
-wget https://raw.githubusercontent.com/akrista/bitburner/main/scripts/import.js import.js
+wget https://raw.githubusercontent.com/Akrista/bitburner/main/scripts/import.js import.js
 ```
 
 # Configure your Import
@@ -17,7 +17,7 @@ You can configure your import inside `import.js`.
 ```js
 config = {
   folder: "scripts",
-  rootUrl: "https://raw.githubusercontent.com/akrista/bitburner/main/",
+  rootUrl: "https://raw.githubusercontent.com/Akrista/bitburner/main/",
   serverPrefix: "Monolith",
 };
 ```

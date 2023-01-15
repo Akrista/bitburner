@@ -1,7 +1,7 @@
 /** @param {NS} ns */
 let config = {
   folder: "scripts",
-  rootUrl: "https://raw.githubusercontent.com/akrista/bitburner/main/",
+  rootUrl: "https://raw.githubusercontent.com/Akrista/bitburner/main/",
   serverPrefix: "Monolith",
 };
 /*
