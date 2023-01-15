@@ -14,7 +14,7 @@ export async function main(ns) {
   let scriptRam = ns.getScriptRam(hackScript);
   for (const [index, server] of myServers.entries()) {
     ns.killall(server);
-    let serverRam = ns.getServerRam(server)[0];
+    let serverRam = ns.getServerMaxRam(server)[0];
     let threads = Math.floor(serverRam / scriptRam);
     let serverIndex = index % targetServers.length;
     let targetServer = targetServers[serverIndex];

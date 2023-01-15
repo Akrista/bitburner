@@ -27,7 +27,7 @@ function serverInfo(ns) {
 function groupServers(ns) {
   let groupedServers = {};
   servers.forEach((server) => {
-    let ram = ns.getServerRam(server)[0];
+    let ram = ns.getServerMaxRam(server)[0];
     groupedServers[ram] = groupedServers[ram] || [];
     groupedServers[ram].push(server);
   });
